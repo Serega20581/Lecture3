@@ -13,6 +13,6 @@ describe('fetchPost function', () => {
   test('длина свойства title в успешном результате', async () => {
     const post = await fetchPost(1);
     expect(post.title.length).toBeGreaterThan(0);
-    expect(post.title).toHaveLength(10); // "First Post" → 10 символов
+    expect(post.title).toHaveLength(10);
   });
 });
